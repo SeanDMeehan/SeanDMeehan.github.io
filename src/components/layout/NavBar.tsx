@@ -4,8 +4,7 @@ import { AppBar, Box, Toolbar } from "@mui/material";
 
 const navItems = [
     { label: "Home", path: "/" },
-    { label: "Research", path: "/research" },
-    { label: "Projects", path: "/projects" },
+    { label: "Selected Work", path: "/work" },
     { label: "Resume", path: "/resume" },
 ];
 

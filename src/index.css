@@ -51,7 +51,7 @@
 }
 
 #root {
-  width: 1126px;
+  width: min(1400px, calc(100% - 2rem));
   max-width: 100%;
   margin: 0 auto;
   text-align: center;
@@ -64,6 +64,7 @@
 
 body {
   margin: 0;
+  padding: 0;
 }
 
 h1,

@@ -1,7 +1,7 @@
 import type { Research } from "../../types/portfolio";
 import { TagList } from "../common/TagList";
 import { LinkList } from "../common/LinkList";
-import { Card, CardMedia, CardContent, Typography, Stack} from "@mui/material";
+import { Card, CardMedia, CardContent, Typography, Stack, Box} from "@mui/material";
 
 type ResearchCardProps = {
     research: Research;
@@ -14,7 +14,7 @@ export default function ResearchCard({ research }: ResearchCardProps) {
                 maxWidth:450,
                 p: 2,
                 transition: "0.2s",
-                color: "text.primary",
+                color: "text.secondary",
                 "&:hover": {
                     transform: "translateY(-4px)",
                     boxShadow: 8,
@@ -25,14 +25,36 @@ export default function ResearchCard({ research }: ResearchCardProps) {
             variant="outlined"
         >
             <CardMedia />
+                <Box sx={{display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column"}}>
+                    <CardMedia
+                        component="img"
+                        image={research.image}
+                        alt={research.title}
+                    >
+                    </CardMedia>
+                    <Typography variant="h5">{research.title}</Typography>
+                </Box>
             <CardContent>
-                <Typography variant="h5">{research.title}</Typography>
-                <Typography variant="body2">{research.summary}</Typography>
-                <Stack direction="row" spacing={1} sx={{mt: 1}}>
-                    <Typography variant="body1" sx={{fontWeight: "bold"}}>Technologies:</Typography>
-                    <TagList tags={research.technologies} />
-                </Stack>
-                <LinkList links={research.links} />
+                <Box sx={{display: "flex", flexDirection: "column", gap: "1"}}>
+                    <Typography 
+                    variant="body2"
+                    sx={{marginLeft:"auto", textAlign: "left"}}
+                    >{research.summary}</Typography>
+                </Box>
+                <Box>
+                    <Stack direction="row" spacing={1} sx={{mt: 1}}>
+                        <Typography variant="body1" sx={{fontWeight: "bold"}}>Techniques:</Typography>
+                        <TagList tags={research.techniques} />
+                    </Stack>
+                    <Stack direction="row" spacing={1} sx={{mt: 1}}>
+                        <Typography variant="body1" sx={{fontWeight: "bold"}}>Technologies:</Typography>
+                        <TagList tags={research.technologies} />
+                    </Stack>
+                    <Stack direction="row" spacing={1} sx={{mt: 1}}>
+                        <Typography variant="body1" sx={{fontWeight: "bold"}}>Link(s):</Typography>
+                        <LinkList links={research.links} />
+                    </Stack>
+                </Box>
             </CardContent>
         </Card>
     );

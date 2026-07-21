@@ -1,13 +1,18 @@
+import { Box, Chip } from "@mui/material";
+
 type TagListProps = {
     tags: string[];
 };
 
 export function TagList({ tags }: TagListProps) {
     return (
-        <div>
+        <Box 
+        sx={{ display: "flex", flexWrap: "wrap", gap: 1 }}
+        color="text.primary"
+        >
             {tags.map((tag) => (
-                <span key={tag}>{tag}, </span>
+                <Chip key={tag} label={tag} />
             ))}
-        </div>
+        </Box>
     );
 }

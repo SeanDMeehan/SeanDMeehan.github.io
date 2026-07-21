@@ -1,4 +1,5 @@
 import type { PortfolioLink } from "../../types/portfolio";
+import  { CommonButton } from "./CommonButton";
 
 type LinkListProps = {
     links: PortfolioLink[];
@@ -9,12 +10,16 @@ export function LinkList({ links }: LinkListProps) {
         <div>
             {links.map((link) => (
                 <a
-                    key={link.href}
                     href={link.href}
+                    key={link.href}
                     target="_blank"
                     rel="noreferrer"
                 >
-                    {link.label}
+                    <CommonButton
+                        onClick={()=>{}}
+                    >
+                        {link.label}
+                    </CommonButton>
                 </a>
             ))}
         </div>
