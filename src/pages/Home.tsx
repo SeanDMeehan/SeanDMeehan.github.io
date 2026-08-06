@@ -2,12 +2,12 @@ import { projects } from "../content/projects";
 import ProjectCard  from "../components/cards/ProjectCard";
 import { research } from "../content/research";
 import  ResearchCard  from "../components/cards/ResearchCard";
-import { Box, CardMedia, Chip, Container, Divider, IconButton, Stack, Typography } from "@mui/material";
+import { Box, CardMedia, Chip, Container, Divider, Link, Stack, Typography } from "@mui/material";
 
 export default function Home() {
 
     const getTechnologies = () => {
-        let techList: string[] = [];
+        const techList: string[] = [];
         projects.forEach(project => {
             project.technologies.forEach(tech => {
                 if (!techList.includes(tech)) {
@@ -22,12 +22,12 @@ export default function Home() {
                 }
             });
         });
-        let techSet = new Set(techList);
+        const techSet = new Set(techList);
         return techSet;
     }
 
     const getTechnicalInterests = () => {
-        let techIntList: string[] = [];
+        const techIntList: string[] = [];
         research.forEach(research => {
             research.techniques.forEach(tech => {
                 if (!techIntList.includes(tech)) {
@@ -35,7 +35,7 @@ export default function Home() {
                 }
             });
         });
-        let techIntSet = new Set(techIntList);
+        const techIntSet = new Set(techIntList);
         return techIntSet;
     }
 
@@ -153,10 +153,30 @@ export default function Home() {
                 <Divider sx={{ borderBottomWidth: 2, borderColor: 'primary.main' }}></Divider>
                 <Box>
                     <Typography variant="h2">Contact</Typography>
-                    <Typography>sean@themeehans.net</Typography>
-                    <Typography>New Orleans, Louisianna</Typography>
-                    <Typography>GitHub: github.com/SeanDMeehan</Typography>
-                    <Typography>LinkedIn: seanLinkedIn</Typography>
+                    <Typography>New Orleans, Louisianna</Typography> 
+                    <Typography>
+                        <Link href="mailto:sean@themeehans.net">sean@themeehans.net</Link>
+                    </Typography>
+                    <Typography>
+                        GitHub:{" "}
+                        <Link
+                            href="https://github.com/SeanDMeehan"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            https://github.com/SeanDMeehan
+                        </Link>
+                    </Typography>
+                    <Typography>
+                        LinkedIn:{" "}
+                        <Link
+                            href="https://www.linkedin.com/in/sean-meehan-0a5053266"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            www.linkedin.com/in/sean-meehan-0a5053266
+                        </Link>
+                    </Typography>
                 </Box>
             </Stack>
         </Container>

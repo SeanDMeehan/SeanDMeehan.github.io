@@ -21,18 +21,6 @@ export const research: Research[] = [
         featured: true
     },
     {
-        id: "law-of-harmonies",
-        title: "An Analysis of the Law of Hamronies",
-        summary: "A research project that investigated the real-world predictive power of Kepler's Law of Harmonies on NASA's exo-planet data. The Law of Harmonies states that the orbital period of a planet is proportional to the semi-major axis of that orbit. Taking the logarithm of this law yeilds a linear equation. This research used a Linear Model to recover the coefficients consistent with the linearized version of Newton's derivaiton of the Law of Harmonies and used ANOVA analysis to investigate which particular deviations of an orbital system from an ideal two body system cause the law to break down.",
-        techniques: ["Linear Models", "ANOVA", "DFBETAs", "Cook's Distance" ],
-        technologies: ["R", "Python", "Pandas"],
-        links: [
-            { label: "PDF", href: LawOfHarmonies}
-        ],
-        image: "/src/assets/images/LawofHarmonies.png",
-        featured: false
-    },
-    {
         id: "brain-network-research",
         title: "A Graph-Theoretic Investigation of Brain Network Structure in Parkinson's Disease Using Resting-State fMRIs",
         summary: "A study of macroscale brain network properties based on resting-state functional MRI data from a set of control subjects and a set of individuals with Parkinson's disease. A small-worldness coefficient calculated using the characteristic path length, clustering coefficients, and matched random Erdos-Renyi graphs for each brain graph was used to analyze the difference in network structure and efficiency between the two groups. ",
@@ -47,15 +35,15 @@ export const research: Research[] = [
         
     },
     {
-        id: "RSA-paper",
-        title: "A Theoretical Exploration of RSA Cryptography",
-        summary: "A survey paper on the history of cryptography culminating in a theoretical treatment of Rivest-Shamir-Adleman (RSA) cryptography, the first modern cryptographic system. The theoretical treatment takes several basic theorems about prime numbers as well as Fermat's Little Theorem and uses them to prove all theorems necessary to provide a theoretical basis for RSA. It then gives a brief guide on how to implement a simple RSA system on a network.",
-        techniques: ["RSA cryptography", "Number Theory", "Abstract Algebra"],
-        technologies: [],
+        id: "law-of-harmonies",
+        title: "An Analysis of the Law of Hamronies",
+        summary: "A research project that investigated the real-world predictive power of Kepler's Law of Harmonies on NASA's exo-planet data. The Law of Harmonies states that the orbital period of a planet is proportional to the semi-major axis of that orbit. Taking the logarithm of this law yeilds a linear equation. This research used a Linear Model to recover the coefficients consistent with the linearized version of Newton's derivaiton of the Law of Harmonies and used ANOVA analysis to investigate which particular deviations of an orbital system from an ideal two body system cause the law to break down.",
+        techniques: ["Linear Models", "ANOVA", "DFBETAs", "Cook's Distance" ],
+        technologies: ["R", "Python", "Pandas"],
         links: [
-            { label: "PDF", href: RSAPaper}
+            { label: "PDF", href: LawOfHarmonies}
         ],
-        image: "/src/assets/images/RSA.png",
+        image: "/src/assets/images/LawofHarmonies.png",
         featured: false
     },
     {
@@ -71,6 +59,18 @@ export const research: Research[] = [
         image: "/src/assets/images/SVD.png",
         featured: false
     },
+    {
+        id: "RSA-paper",
+        title: "A Theoretical Exploration of RSA Cryptography",
+        summary: "A survey paper on the history of cryptography culminating in a theoretical treatment of Rivest-Shamir-Adleman (RSA) cryptography, the first modern cryptographic system. The theoretical treatment takes several basic theorems about prime numbers as well as Fermat's Little Theorem and uses them to prove all theorems necessary to provide a theoretical basis for RSA. It then gives a brief guide on how to implement a simple RSA system on a network.",
+        techniques: ["RSA cryptography", "Number Theory", "Abstract Algebra"],
+        technologies: [],
+        links: [
+            { label: "PDF", href: RSAPaper}
+        ],
+        image: "/src/assets/images/RSA.png",
+        featured: false
+    }, 
     {
         id: "fourrier-analysis-paper",
         title: "The History and Applications of Fourier Analysis",
