@@ -5,6 +5,12 @@ import BrainNetworkPaper from "/src/assets/papers/BrainNetworkPaper.pdf";
 import RSAPaper from "/src/assets/papers/PublicKeyCryptographyPaper.pdf";
 import PCAPaper from "/src/assets/papers/PCAPaper.pdf";
 import FourrierAnalysisPaper from "/src/assets/papers/FourrierAnalysisPaper.pdf";
+import numericalMethods from "../assets/images/NumericalMethods.png";
+import brainGraph from "../assets/images/BrainGraph.png";
+import lawOfHarmonies from "../assets/images/LawofHarmonies.png";
+import svd from "../assets/images/SVD.png";
+import rsa from "../assets/images/RSA.png";
+import fourrier from "../assets/images/Fourrier.png";
 
 export const research: Research[] = [
     {
@@ -17,7 +23,7 @@ export const research: Research[] = [
             { label: "PDF", href: IterativeMethodsPaper },
             { label: "GitHub", href: "https://github.com/SeanDMeehan/NumericalMethods"}
         ],
-        image: "src/assets/images/NumericalMethods.png",
+        image: numericalMethods,
         featured: true
     },
     {
@@ -30,7 +36,7 @@ export const research: Research[] = [
             { label: "PDF", href: BrainNetworkPaper },
             { label: "GitHub", href: "https://github.com/SeanDMeehan/BrainNetworkResearch" }
         ],
-        image: "/src/assets/images/BrainGraph.png",
+        image: brainGraph,
         featured: false
         
     },
@@ -43,7 +49,7 @@ export const research: Research[] = [
         links: [
             { label: "PDF", href: LawOfHarmonies}
         ],
-        image: "/src/assets/images/LawofHarmonies.png",
+        image: lawOfHarmonies,
         featured: false
     },
     {
@@ -56,7 +62,7 @@ export const research: Research[] = [
             {label: "PDF", href: PCAPaper},
             {label: "GitHub", href: "https://github.com/SeanDMeehan/NumericalMethods/blob/main/lin_alg_module.py"}
         ],
-        image: "/src/assets/images/SVD.png",
+        image: svd,
         featured: false
     },
     {
@@ -68,7 +74,7 @@ export const research: Research[] = [
         links: [
             { label: "PDF", href: RSAPaper}
         ],
-        image: "/src/assets/images/RSA.png",
+        image: rsa,
         featured: false
     }, 
     {
@@ -80,7 +86,7 @@ export const research: Research[] = [
         links: [
             { label: "PDF", href: FourrierAnalysisPaper}
         ],
-        image: "/src/assets/images/Fourrier.png",
+        image: fourrier,
         featured: false
     }
 ];

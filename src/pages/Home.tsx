@@ -3,6 +3,7 @@ import ProjectCard  from "../components/cards/ProjectCard";
 import { research } from "../content/research";
 import  ResearchCard  from "../components/cards/ResearchCard";
 import { Box, CardMedia, Chip, Container, Divider, Link, Stack, Typography } from "@mui/material";
+import hero from "../assets/hero.png";
 
 export default function Home() {
 
@@ -77,8 +78,8 @@ export default function Home() {
                         <CardMedia
                             sx={{maxWidth: 500}}
                             component="img"
-                            image={"/src/content/images/seanMeehan.png"}
-                            alt={"/src/content/images/seanMeehan.png"}
+                            image={hero}
+                            alt="Sean Meehan"
                         >
                         </CardMedia>
                     </Stack>

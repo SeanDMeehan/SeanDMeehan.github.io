@@ -1,5 +1,7 @@
 import type { Project } from "../types/portfolio";
 import satelliteML from "../assets/images/SatelliteML.png";
+import natTwentyOne from "../assets/images/NatTwentyOne.png";
+import linAlgLib from "../assets/images/LinAlgLib.png";
 
 export const projects: Project[] = [
     {
@@ -21,7 +23,7 @@ export const projects: Project[] = [
         links: [
             { label: "GitHub", href: "#" }
         ],
-        image: "/src/assets/images/NatTwentyOne.png",
+        image: natTwentyOne,
         featured: true
     },
     {
@@ -32,7 +34,7 @@ export const projects: Project[] = [
         links: [
             { label: "GitHub", href: "https://github.com/SeanDMeehan/NumericalMethods"}
         ],
-        image: "/src/assets/images/LinAlgLib.png",
+        image: linAlgLib,
         featured: false
     },
     {
@@ -43,7 +45,7 @@ export const projects: Project[] = [
         links: [
             { label: "GitHub", href: "https://github.com/SeanDMeehan/SeanDMeehan.github.io"}
         ],
-        image: "/src/content/images/nat-twenty-one.png",
+        image: natTwentyOne,
         featured: false
     },
     
