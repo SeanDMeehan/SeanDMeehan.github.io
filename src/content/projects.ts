@@ -1,4 +1,5 @@
 import type { Project } from "../types/portfolio";
+import satelliteML from "../assets/images/SatelliteML.png";
 
 export const projects: Project[] = [
     {
@@ -9,7 +10,7 @@ export const projects: Project[] = [
         links: [
             { label: "Github", href: "#" }
         ],
-        image: "/src/assets/images/SatelliteML.png",
+        image: satelliteML,
         featured: true
     },
     {
