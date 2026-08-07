@@ -3,7 +3,7 @@ import ProjectCard  from "../components/cards/ProjectCard";
 import { research } from "../content/research";
 import  ResearchCard  from "../components/cards/ResearchCard";
 import { Box, CardMedia, Chip, Container, Divider, Link, Stack, Typography } from "@mui/material";
-import hero from "../assets/hero.png";
+import hero from "../assets/images/headshot.jpg";
 
 export default function Home() {
 
@@ -85,6 +85,12 @@ export default function Home() {
                     </Stack>
 
                 </Box>
+                <Box>
+                    <Typography variant="h2">About</Typography>
+                    <Typography>
+                        I am a master's student in applied mathematics at Tulane University with interests in machine learning, data science, and software engineering. I enjoy understanding how things work, whether that means reading research papers, implementing algorithms from scratch, or building software around ideas that I find interesting. Outside of mathematics and programming, I enjoy reading, writing, chess, soccer, and an occasional game of DnD.
+                    </Typography>
+                </Box>
                 <Divider sx={{ borderBottomWidth: 2, borderColor: 'primary.main' }}></Divider>
                 <Box>
                     <Typography variant="h2">Featured Work</Typography>
@@ -117,12 +123,7 @@ export default function Home() {
                         
                 </Box>
                 <Divider sx={{ borderBottomWidth: 2, borderColor: 'primary.main' }}></Divider>
-                <Box>
-                    <Typography variant="h2">About</Typography>
-                    <Typography>
-                        I am a master's student in applied mathematics at Tulane University with interests in machine learning, data science, and software engineering. I enjoy understanding how things work, whether that means reading research papers, implementing algorithms from scratch, or building software around ideas that I find interesting. Outside of mathematics and programming, I enjoy reading, writing, chess, soccer, and an occasional game of DnD.
-                    </Typography>
-                </Box>
+
                 <Box
                     sx={{ flex:1}}
                 >
@@ -134,7 +135,7 @@ export default function Home() {
                          }}
                     >
                         {Array.from(getTechnologies()).map((tech, index) => (
-                            <Chip key={index} label={tech} sx={{ mr: 1, mb: 1 }} />
+                            <Chip key={index} label={tech} sx={{ mr: 1, mb: 1, bgcolor: "background.paper", color: "text.secondary" }} />
                         ))}
                     </Stack>
                 </Box>
@@ -147,7 +148,7 @@ export default function Home() {
                          }}
                     >
                         {Array.from(getTechnicalInterests()).map((tech, index) => (
-                            <Chip key={index} label={tech} sx={{ mr: 1, mb: 1 }} />
+                            <Chip key={index} label={tech} sx={{ mr: 1, mb: 1, bgcolor: "background.paper", color: "text.secondary"  }} />
                         ))}
                     </Stack>
                 </Box>

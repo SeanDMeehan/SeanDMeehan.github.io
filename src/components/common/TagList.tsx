@@ -11,7 +11,7 @@ export function TagList({ tags }: TagListProps) {
         color="text.primary"
         >
             {tags.map((tag) => (
-                <Chip key={tag} label={tag} />
+                <Chip sx={{bgcolor: "background.default"}} key={tag} label={tag} />
             ))}
         </Box>
     );
