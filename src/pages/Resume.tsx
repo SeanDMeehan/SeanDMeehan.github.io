@@ -1,5 +1,5 @@
 import { Box, Button, Container, Paper, Stack, Typography } from "@mui/material";
-import resumePdf from "../assets/resume/SeanMeehanResumeMS.pdf";
+import resumePdf from "../assets/resume/SeanMeehanResume.pdf";
 
 export default function Resume() {
     return (
